@@ -1,46 +1,52 @@
 <!DOCTYPE html>
-<html lange="pt-br">
+<html lange="pr-br">
     <head>
         <meta charset="UTF-8">
         <title>PicPro</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/> <!--Resetar pré definição das tags-->
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
     </head>
 
     <body>
         <header class = "cabecalho"> <!-- cabeçalho -->
             <div class="container">
-                <figure class="cabecalho_logoPicpro">
+                <figure class="cabecalho__logoPicpro">
                     <img src="./assets/img/logo-picpro.png" alt="Logo PicPro">
                 </figure>
-                <figure class="cabecalho_logoKenzie">
+                <figure class="cabecalho__logoKenzie">
                     <img src="./assets/img/logo-kenzie.png" alt="Logo Kenzie">
                 </figure>
             </div>
         </header>
         
         <main> <!-- Conteúdo principal da página-->
-            <section class="sessaoDetalhesConta"> <!-- Sessão Usuário -->
-                <div class="sessaoDetalhesConta__sobreUsuario">
+            <section class="secaoDetalhesConta"> <!-- Sessão Usuário -->
+                <div class="secaoDetalhesConta__sobreUsuario">
                     <img src="./assets/img/usuario.png" alt="Ícone de Usuário">
                    <p>Olá, <strong>@mariaporcina</strong></p> 
                 </div>
-                <div class="sessaoDetalhesConta__sobreSaldo">
-                    <p>Saldo PicPay <strong>RS$ 0,00</strong></p>
+                <div class="secaoDetalhesConta__sobreSaldo">
+                    <p>Saldo PicPay <strong>R$ 0,00</strong></p>
                     <button>Extrato</button>
                 </div>
-                <ul class="sessaoDetalhesConta__opcoesTransacoes">
-                    <li class="sessaoDetalhesConta__itemTransacao">
+                <ul class="secaoDetalhesConta__opcoesTransacoes">
+                    <li class="secaoDetalhesConta__itemTransacao">
                         <img src="./assets/img/qrcode.png" alt="Ícone QR Code">
                         <p><strong>QR Code</strong></p>
                     </li>
-                    <li class="sessaoDetalhesConta__itemTransacao">
+                    <li class="secaoDetalhesConta__itemTransacao">
                         <img src="./assets/img/pix.png" alt="Ícone Pix">
                         <p><strong>Pix</strong></p>
                     </li>
-                    <li class="sessaoDetalhesConta__itemTransacao">
+                    <li class="secaoDetalhesConta__itemTransacao">
                         <img src="./assets/img/codigo.png" alt="Ícone Pagar Boleto">
                         <p><strong>Pagar Boleto</strong></p>
                     </li>
-                    <li class="sessaoDetalhesConta__itemTransacao">
+                    <li class="secaoDetalhesConta__itemTransacao">
                         <img src="./assets/img/cobrar-icon.png" alt="Ícone Cobrar">
                         <p><strong>Cobrar</strong></p>
                     </li>
