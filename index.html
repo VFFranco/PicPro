@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lange="pr-br">
+<html lange="pt-br">
     <head>
         <meta charset="UTF-8">
         <title>PicPro</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@1,300&display=swap" 
         rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/> <!--Resetar pré definição das tags-->
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
@@ -25,32 +25,47 @@
         
         <main> <!-- Conteúdo principal da página-->
             <section class="secaoDetalhesConta"> <!-- Sessão Usuário -->
-                <div class="secaoDetalhesConta__sobreUsuario">
-                    <img src="./assets/img/usuario.png" alt="Ícone de Usuário">
-                   <p>Olá, <strong>@mariaporcina</strong></p> 
+                <div class="container">
+                    <div class="secaoDetalhesConta__sobreUsuario">
+                        <div class="secaoDetalhesConta__sobreUsuario--nome">
+                            <img src="./assets/img/usuario.png" alt="Ícone de Usuário">
+                            <p>Olá, <strong>@mariaporcina</strong></p> 
+                        </div>
+                        <div class="secaoDetalhesConta__sobreUsuario--ícones">
+                            <img src="./assets/img/presente.png" alt="Ícone Presente">
+                            <img src="./assets/img/chat.png" alt="Ícone Chat">
+                        </div>
+
+                    </div>
+                    <div class="secaoDetalhesConta__sobreSaldo">
+                        <div>
+                            <p>Saldo PicPay</p>
+                            <div class="secaoDetalhesConta__sobreSaldo--valor">
+                                <p>R$ 0,00</p>
+                                <img src="./assets/img/visualizar.png" alt="Ícone visualizar">
+                            </div>
+                        </div>
+                        <button>Extrato</button>
+                    </div>
+                    <ul class="secaoDetalhesConta__opcoesTransacoes">
+                        <li class="secaoDetalhesConta__itemTransacao">
+                            <img src="./assets/img/qrcode.png" alt="Ícone QR Code">
+                            <p><strong>QR Code</strong></p>
+                        </li>
+                        <li class="secaoDetalhesConta__itemTransacao">
+                            <img src="./assets/img/pix.png" alt="Ícone Pix">
+                            <p><strong>Pix</strong></p>
+                        </li>
+                        <li class="secaoDetalhesConta__itemTransacao">
+                            <img src="./assets/img/codigo.png" alt="Ícone Pagar Boleto">
+                            <p><strong>Pagar Boleto</strong></p>
+                        </li>
+                        <li class="secaoDetalhesConta__itemTransacao">
+                            <img src="./assets/img/cobrar-icon.png" alt="Ícone Cobrar">
+                            <p><strong>Cobrar</strong></p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="secaoDetalhesConta__sobreSaldo">
-                    <p>Saldo PicPay <strong>R$ 0,00</strong></p>
-                    <button>Extrato</button>
-                </div>
-                <ul class="secaoDetalhesConta__opcoesTransacoes">
-                    <li class="secaoDetalhesConta__itemTransacao">
-                        <img src="./assets/img/qrcode.png" alt="Ícone QR Code">
-                        <p><strong>QR Code</strong></p>
-                    </li>
-                    <li class="secaoDetalhesConta__itemTransacao">
-                        <img src="./assets/img/pix.png" alt="Ícone Pix">
-                        <p><strong>Pix</strong></p>
-                    </li>
-                    <li class="secaoDetalhesConta__itemTransacao">
-                        <img src="./assets/img/codigo.png" alt="Ícone Pagar Boleto">
-                        <p><strong>Pagar Boleto</strong></p>
-                    </li>
-                    <li class="secaoDetalhesConta__itemTransacao">
-                        <img src="./assets/img/cobrar-icon.png" alt="Ícone Cobrar">
-                        <p><strong>Cobrar</strong></p>
-                    </li>
-                </ul>
             </section>
 
             <section class="secaoTransacao"> 
@@ -65,7 +80,7 @@
                         <img src="./assets/img/qrcode-imagem.png" alt="Imagem QR Code">
                         <p>@mariaporcina</p>
                         <button>Cobre um amigo</button>
-                        <strong>Compartilhar meu código</strong>
+                        <a href="">Compartilhar meu código</a>
                     </div>
 
                     <div class="secaoTransacao__pix"> <!-- div pix -->
@@ -103,38 +118,40 @@
             </section>
 
             <footer class="rodape"> <!-- rotapé -->
-                <ul class="rodape__menuPrincipal">
-                    <li class="rodape__menuItem">
-                        <a href="#">
-                            <img src="./assets/img/inicio.png" alt="Ícone Início">
-                            <p>Início</p>
-                        </a>
-                    </li>
-                    <li class="rodape__menuItem">
-                        <a href="#">
-                            <img src="./assets/img/carteira-icon.png" alt="Ícone Carteira">
-                            <p>Carteira</p>
-                        </a>
-                    </li>
-                    <li class="rodape__menuItem">
-                        <a href="#">
-                            <img src="./assets/img/pagar.png" alt="Ícone Pagar">
-                            <p>Pagar</p>
-                        </a>
-                    </li>
-                    <li class="rodape__menuItem">
-                        <a href="#">
-                            <img src="./assets/img/notificacao.png" alt="Ícone Notificação">
-                            <p>Notificação</p>
-                        </a>
-                    </li>
-                    <li class="rodape__menuItem">
-                        <a href="#">
-                            <img src="./assets/img/bolsa.png" alt="Ícone Store">
-                            <p>Store</p>
-                        </a>
-                    </li>
-            </ul>
+                <div class="container">
+                    <ul class="rodape__menuPrincipal">
+                        <li class="rodape__menuItem">
+                            <a href="#">
+                                <img src="./assets/img/inicio.png" alt="Ícone Início">
+                                <p>Início</p>
+                            </a>
+                        </li>
+                        <li class="rodape__menuItem">
+                            <a href="#">
+                                <img src="./assets/img/carteira-icon.png" alt="Ícone Carteira">
+                                <p>Carteira</p>
+                            </a>
+                        </li>
+                        <li class="rodape__menuItem--pagar">
+                            <a href="#">
+                                <img src="./assets/img/pagar.png" alt="Ícone Pagar">
+                                <p>Pagar</p>
+                            </a>
+                        </li>
+                        <li class="rodape__menuItem">
+                            <a href="#">
+                                <img src="./assets/img/notificacao.png" alt="Ícone Notificação">
+                                <p>Notificação</p>
+                            </a>
+                        </li>
+                        <li class="rodape__menuItem">
+                            <a href="#">
+                                <img src="./assets/img/bolsa.png" alt="Ícone Store">
+                                <p>Store</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </footer>
         </main>
 
